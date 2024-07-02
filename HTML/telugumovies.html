@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu movie</title>
+    <link rel="stylesheet" href="../CSS/moviepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../JS/language choice.js"></script>
+    <style>
+        .swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left:150px;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../Images/sidewaylogo.png" id="logo">
+    <a href="./home.html"><input type="button" value="Home"  class="menu"></a>
+    <a href="./about.html"><input type="button" value="About"  class="menu"></a>
+    <a href="./contact.html"><input type="button" value="Contact"  class="menu"></a>
+    <a href="./musician.html"><input type="button" value="Musics"  class="menu"></a>
+    </div>
+    <div class="line"></div>
+    <br>
+    <select id="choice" onchange="la()">
+        <option value="for you">for you</option>
+        <option value="tamil">Tamil</option>
+        <option value="telugu" selected>Telugu</option>
+        <option value="malayalam">Malayalam</option>
+        <option value="kannada">Kannada</option>
+    </select>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="./Akhanda.html"><img src="../Movie/imageslider/telugu/AKHANDA.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Kapatadhaari.html"><img src="../Movie/imageslider/telugu/KAPATADHAARI.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Konda Polam.html"><img src="../Movie/imageslider/telugu/Kondapolam.webp"></a></div>
+                <div class="swiper-slide"><a href="./Maestro.html"><img src="../Movie/imageslider/telugu/MAESTRO.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Most Eligible Bachelor.html"><img src="../Movie/imageslider/telugu/MOST ELIGIBLE BACHELOR.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Ninnila Ninnila.html"><img src="../Movie/imageslider/telugu/NINNILA NINNILA.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Zobie Reddy.html"><img src="../Movie/imageslider/telugu/ZOMBIE REDDY.jpg"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
+    <fieldset>
+        <p>NEW Release</p>
+        <table>
+            <td><a href="./Kapatadhaari.html"><img src="../Movie/telugu/new release/kapatadhaari.jpeg" class="poster"></a><b>Kapatadhaari</b></td>
+            <td><a href="./krack.html"><img src="../Movie/telugu/new release/krack.jpg" class="poster"></a><b>Krack</b></td>
+            <td><a href="./Maestro.html"><img src="../Movie/telugu/new release/maestro.jpg" class="poster"></a><b>Maestro</b></td>
+            <td><a href="./Maha Samudram.html"><img src="../Movie/telugu/new release/maha samudram.jpg" class="poster"></a><b>Maha Samudram</b></td>
+            <td><a href="./www.html"><img src="../Movie/telugu/new release/www.jpg" class="poster"></a><b>WWW</b></td>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>action release</p>
+        <table>
+            <tr>
+                <td><a href="./Akhanda.html"><img src="../Movie/telugu/action/Akhanda.jpg" class="poster"></a><b>Akhanda</b></td>
+                <td><a href="./Konda Polam.html"><img src="../Movie/telugu/action/Konda Polam.jpg" class="poster"></a><b>Konda Polam</b></td>
+                <td><a href="./Mosagallu.html"><img src="../Movie/telugu/action/Mosagallu.jpg" class="poster"></a><b>Mosagallu</b></td>
+                <td><a href="./Seetimaarr.html"><img src="../Movie/telugu/action/Seetimaarr.jpg" class="poster"></a><b>Seetimaarr</b></td>
+                <td><a href="./Zobie Reddy.html"><img src="../Movie/telugu/action/Zombie Reddy.jpg" class="poster"></a><b>Zombie Reddy</b></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>romantic release</p>
+        <table>
+            <tr>
+                <td><a href="./Adbhutham.html"><img src="../Movie/telugu/romance/Adbhutham.jpg" class="poster"></a><b>Adbhutham</b></td>
+                <td><a href="./Love Story.html"><img src="../Movie/telugu/romance/love story.jpg" class="poster"></a><b>Love Story</b></td>
+                <td><a href="./Most Eligible Bachelor.html"><img src="../Movie/telugu/romance/Most Eligible Bachelor.jpg" class="poster"></a><b>Most Eligible Bachelor</b></td>
+                <td><a href="./Ninnila Ninnila.html"><img src="../Movie/telugu/romance/Ninnila Ninnila.jpg" class="poster"></a><b>Ninnila Ninnila</b></td>
+                <td><a href="./Varudu Kaavalenu.html"><img src="../Movie/telugu/romance/Varudu Kaavalenu.jpg" class="poster"></a><b>Varudu Kaavalenu</b></td>
+                
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <a href="./movie catelog.html"><input type="button" value="back"  style="color: rgb(186, 130, 238); border-radius: 20px; border-color: rgb(186, 130, 238);background-color:black;"></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction : false,
+            },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable : true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+    </script>
+    <script>
+        function la() {
+    let lan_choice=document.getElementById("choice").value
+    if (lan_choice=="tamil"){
+        window.location.href="./tamil movie.html"
+    }
+    else if (lan_choice=="for you"){
+        window.location.href="./movie catelog.html"
+    }
+    else if (lan_choice=="malayalam"){
+        window.location.href="./malayalammovies.html"
+    }
+    else if (lan_choice=="telugu"){
+        window.location.href="./telugumovies.html"
+    }
+    else{
+        window.location.href="./kannadamovies.html"
+    }
+}
+    </script>
+</body>
+</html>

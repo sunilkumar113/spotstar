@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kannada movie</title>
+    <link rel="stylesheet" href="../CSS/moviepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../JS/language choice.js"></script>
+    <style>
+        .swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left:150px;
+}
+</style>
+</head>
+<body>
+    <div>
+        <img src="../Images/sidewaylogo.png" id="logo">
+    <a href="./home.html"><input type="button" value="Home"  class="menu"></a>
+    <a href="./about.html"><input type="button" value="About"  class="menu"></a>
+    <a href="./contact.html"><input type="button" value="Contact"  class="menu"></a>
+    <a href="./musician.html"><input type="button" value="Musics"  class="menu"></a>
+    </div>
+    <div class="line"></div>
+    <br>
+    <select id="choice" onchange="la()">
+        <option value="for you">for you</option>
+        <option value="tamil">Tamil</option>
+        <option value="telugu">Telugu</option>
+        <option value="malayalam">Malayalam</option>
+        <option value="kannada" selected>Kannada</option>
+    </select>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="./case of kondana.html"><img src="../Movie/imageslider/kannada/CASE OF KONDANA.jpg"></a></div>
+                <div class="swiper-slide"><a href="./bhairathi ranagal.html"><img src="../Movie/imageslider/kannada/BHAIRATHI RANAGAL"></a></div>
+                <div class="swiper-slide"><a href="./Juni.html"><img src="../Movie/imageslider/kannada/JUNI"></a></div>
+                <div class="swiper-slide"><a href="./kotee.html"><img src="../Movie/imageslider/kannada/KOTEE"></a></div>
+                <div class="swiper-slide"><a href="./Ondu Sarala Prema Kathe.html"><img src="../Movie/imageslider/kannada/ONDU SARALA PREMA KATHE.jpg"></a></div>
+                <div class="swiper-slide"><a href="./ramanaavatara.html"><img src="../Movie/imageslider/kannada/RAMANA AVATARA.jpg"></a></div>
+                <div class="swiper-slide"><a href="./yuva.html"><img src="../Movie/imageslider/kannada/YUVA.jpg"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
+    <fieldset>
+        <p>NEW Release</p>
+        <table>
+            <td><a href="./Juni.html"><img src="../Movie/kannada/new release/juni.jpg" class="poster"></a><b>juni</b></td>
+            <td><a href="./kantara.html"><img src="../Movie/kannada/new release/Kantara  Chapter 1.jpg" class="poster"></a><b>Kantara  Chapter 1</b></td>
+            <td><a href="./kotee.html"><img src="../Movie/kannada/new release/Kotee.jpg" class="poster"></a><b>Kotee</b></td>
+            <td><a href="./upadhyaksha.html"><img src="../Movie/kannada/new release/Upadhyaksha.jpg" class="poster"></a><b>Upadhyaksh</b></td>
+            <td><a href="./yuva.html"><img src="../Movie/kannada/new release/yuva.jpg" class="poster"></a><b>Yuva</b></td>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>action release</p>
+        <table>
+            <tr>
+                <td><a href="./bhairathi ranagal.html"><img src="../Movie/kannada/action/Bhairathi Ranagal.jpg" class="poster"></a><b>Bhairathi Ranagal</b></td>
+                <td><a href="./case of kondana.html"><img src="../Movie/kannada/action/Case of Kondana.jpg" class="poster"></a><b>Case of Kondana</b></td>
+                <td><a href="./kd.html"><img src="../Movie/kannada/action/kd.jpg" class="poster"></a><b>KD</b></td>
+                <td><a href="./martin.html"><img src="../Movie/kannada/action/martin.jpg" class="poster"></a><b>Martin</b></td>
+                <td><a href="./ui.html"><img src="../Movie/kannada/action/ui.jpg" class="poster"></a><b>UI</b></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>romantic release</p>
+        <table>
+            <tr>
+                <td><a href="./chow chow bath.html"><img src="../Movie/kannada/romance/Chow Chow Bath.jpg" class="poster"></a><b>Chow Chow Bath</b></td>
+                <td><a href="./for regn kannada.html"><img src="../Movie/kannada/romance/For Regn.jpg" class="poster"></a><b>For Reg</b></td>
+                <td><a href="./naguvina hoogala mela.html"><img src="../Movie/kannada/romance/Naguvina Hoogala Mele.jpg" class="poster"></a><b>Naguvina Hoogala Mele</b></td>
+                <td><a href="./Ondu Sarala Prema Kathe.html"><img src="../Movie/kannada/romance/Ondu Sarala Prema Kathe.jpg" class="poster"></a><b>Ondu Sarala Prema Kathe</b></td>
+                <td><a href="./ramanaavatara.html"><img src="../Movie/kannada/romance/Ramana Avatara.jpg" class="poster"></a><b>Ramana Avatara</b></td>
+                
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <a href="./movie catelog.html"><input type="button" value="back"  style="color: rgb(186, 130, 238); border-radius: 20px; border-color: rgb(186, 130, 238);background-color:black;"></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction : false,
+            },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable : true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+    </script>
+    <script>
+        function la() {
+    let lan_choice=document.getElementById("choice").value
+    if (lan_choice=="tamil"){
+        window.location.href="./tamil movie.html"
+    }
+    else if (lan_choice=="for you"){
+        window.location.href="./movie catelog.html"
+    }
+    else if (lan_choice=="malayalam"){
+        window.location.href="./malayalammovies.html"
+    }
+    else if (lan_choice=="telugu"){
+        window.location.href="./telugumovies.html"
+    }
+    else{
+        window.location.href="./kannadamovies.html"
+    }
+}
+    </script>
+</body>
+</html>

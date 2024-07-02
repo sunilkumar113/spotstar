@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="icon" type="images" href="./Images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        fieldset{
+            text-align: center;
+            width: 300px;
+            margin-left: 600px;
+            border-color: rgb(186, 130, 238);
+            box-shadow: 0 0 10px 0px rgb(186, 130, 238);
+            background-color: rgb(186, 130, 238);
+            color: black;
+            border-radius: 20px;
+        }
+        .box{
+            height: 25px;
+            padding-left: 25px;
+        }
+        img{
+            margin-left: 570px;
+            margin-top:  0px;
+        }
+        fieldset:hover{
+            box-shadow: 0px 0px 0px
+        }
+        a{
+            color: black;
+        }
+        #button{
+            background-color:rgb(0, 0, 0); 
+            color: rgb(186, 130, 238); 
+            border-color: rgb(186, 130, 238); border-radius: 20px;
+        }
+        .profile{
+            position: absolute;
+            left: 685px;
+            top: 330px;
+        }
+        .lock{
+            position: absolute;
+            top: 380px;
+            left: 685px;
+        }
+        .gif{
+            width: 300px;
+            float: right;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+    <img src="./Images/newlogo.png" height="250">
+    <br><br>
+    <fieldset>
+        <br>
+        <br>
+        <i class="fa-solid fa-user profile"></i>
+    <input type="text" style="border-radius: 5px;" placeholder="username/gmail" class="box">
+    <br>
+    <br>
+    <i class="fa-solid fa-lock lock"></i>
+    <input type="password" style="border-radius: 5px;" placeholder="password" class="box">
+    <br>
+    <br>
+    <a href="./HTML/home.html"><input type="button" value="login" id="button"></a><br>
+    <a href="./HTML/forget password.html"><b>Forget password?</b></a><br>
+    <p>are you new user? <a href="./HTML/sign up.html"><b>Sign up</b></a></p>
+    </fieldset>
+</body>
+</html>

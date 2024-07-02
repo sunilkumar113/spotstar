@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil movies</title>
+    <link rel="stylesheet" href="../CSS/moviepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../JS/language choice.js"></script>
+    <style>
+        .persons>td{
+            padding-left: 150px;
+        }
+        .menu{
+    color: rgb(186, 130, 238); 
+    border-radius: 20px; 
+    float: right;
+    border: none;
+    border-color: rgb(186, 130, 238);background-color:black;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+.menu:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+#logo{
+    width: 250px;
+    height: 70px;
+    border: none;
+}
+.line{
+    border-bottom: 2px rgb(186, 130, 238) solid;
+}
+#choice{
+    color: rgb(186, 130, 238);
+    background-color: black;
+    height: 40px;
+    width: 260px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 20px;
+    border: 1px rgb(186, 130, 238) solid;
+}
+.container{
+    background-color: black;
+}
+.swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left:150px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: rgb(186, 130, 238);
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: rgb(186, 130, 238);
+}
+.swiper-wrapper img{
+    width: 100%;
+
+}
+.swiper-slide img{
+    width: 1230px;
+    height: 600px;
+}
+    </style>
+    <script src="../JS/language choice.js"></script>
+</head>
+<body>
+    <div>
+        <img src="../Images/sidewaylogo.png" id="logo">
+    <a href="./home.html"><input type="button" value="Home"  class="menu"></a>
+    <a href="./about.html"><input type="button" value="About"  class="menu"></a>
+    <a href="./contact.html"><input type="button" value="Contact"  class="menu"></a>
+    <a href="./musician.html"><input type="button" value="Musics"  class="menu"></a>
+    </div>
+    <div class="line"></div>
+    <br>
+    <select id="choice" onchange="la()">
+        <option value="for you">for you</option>
+        <option value="tamil" selected>Tamil</option>
+        <option value="telugu">Telugu</option>
+        <option value="malayalam">Malayalam</option>
+        <option value="kannada">Kannada</option>
+    </select>
+    <div class="container">
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="./jailer.html"><img src="../Movie/imageslider/tamil/jailer.jpg"></a></div>
+        <div class="swiper-slide"><a href="./leo.html"><img src="../Movie/imageslider/tamil/leo.jpg"></a></div>
+        <div class="swiper-slide"><a href="./vadakkupatti ramasamy.html"><img src="../Movie/imageslider/tamil/VADAKKUPATTI RAMASAMY.jpg"></a></div>
+        <div class="swiper-slide"><a href="./maamanan.html"><img src="../Movie/imageslider/tamil/maamannan"></a></div>
+        <div class="swiper-slide"><a href="./master.html"><img src="../Movie/imageslider/tamil/master.jpg"></a></div>
+        <div class="swiper-slide"><a href="./sabanayagan.html"><img src="../Movie/imageslider/tamil/SABA NAYAGAN"></a></div>
+        <div class="swiper-slide"><a href="./por thozhil.html"><img src="../Movie/imageslider/tamil/POR THOZIL.jpg"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    </div>
+    <fieldset>
+        <p>NEW Release</p>
+        <table>
+            <td><a href="./leo.html"><img src="../Movie/Tamil/new release/leo.jpg" class="poster"></a><b>leo</b></td>
+            <td><a href="./maamanan.html"><img src="../Movie/Tamil/new release/maamannan.jpg" class="poster"></a><b>maamannan</b></td>
+            <td><a href="./merry christmas.html"><img src="../Movie/Tamil/new release/marry christmas.jpg" class="poster"></a><b>marry christmas</b></td>
+            <td><a href="./mathimaran.html"><img src="../Movie/Tamil/new release/mathimaran.jpg" class="poster"></a><b>mathimaran</b></td>
+            <td><a href="./por thozhil.html"><img src="../Movie/Tamil/new release/por thozhil.jpg" class="poster"></a><b>por thozil</b></td>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>action release</p>
+        <table>
+            <tr>
+                <td><a href="./jailer.html"><img src="../Movie/Tamil/action/jailer.jpg" class="poster"></a><b>jailer</b></td>
+                <td><a href="./laththi.html"><img src="../Movie/Tamil/action/laththi.jpg" class="poster"></a><b>laththi</b></td>
+                <td><a href="./master.html"><img src="../Movie/Tamil/action/master.jpg" class="poster"></a><b>master</b></td>
+                <td><a href="./rudhran.html"><img src="../Movie/Tamil/action/rudhran.jpg" class="poster"></a><b>rudhran</b></td>
+                <td><a href="./viduthalai.html"><img src="../Movie/Tamil/action/viduthalai.jpg" class="poster"></a><b>viduthalai</b></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>romantic release</p>
+        <table>
+            <tr>
+                <td><a href="./dada.html"><img src="../Movie/Tamil/romance/dada.jpg" class="poster"></a><b>dada</b></td>
+                <td><a href="./lovetoday.html"><img src="../Movie/Tamil/romance/love today.jpg" class="poster"></a><b>love today</b></td>
+                <td><a href="./sabanayagan.html"><img src="../Movie/Tamil/romance/saba nayagan.jpg" class="poster"></a><b>saba nayagan</b></td>
+                <td><a href="./sitaraman.html"><img src="../Movie/Tamil/romance/sita ramam.jpg" class="poster"></a><b>sita ramam</b></td>
+                <td><a href="./vadakkupatti ramasamy.html"><img src="../Movie/Tamil/romance/vadakkupatti ramasamy.jpg" class="poster"></a><b>vadakkupatti ramasamy</b></td>
+                
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset >
+        <p>director</p>
+        <table class="persons">
+            <tr>
+                <th><a href="./gvm.html"><img src="../Movie/Tamil/director/gvm/gautham vasudev menon.jpg" class="person"></a></th>
+                <th><a href="./ks ravikumar.html"><img src="../Movie/Tamil/director/ks ravikumar/K.S. Ravikumar.jpg" class="person"></a></th>
+                <th><a href="./pvasu.html"><img src="../Movie/Tamil/director/p vasu/p vasu.jpg" class="person"></a></th>
+                <th><a href="./selvaraghavan.html"><img src="../Movie/Tamil/director/selvaraghavan/selvaraghavan.jpg" class="person"></a></th>
+                <th><a href="./shankar.html"><img src="../Movie/Tamil/director/shankar/shankar.jpg" class="person"></a></th>
+            </tr>
+            <tr>
+                <th><b>GVM</b></th>
+                <th><b>K.S. RAVIKUMAR</b></th>
+                <th><b>P. VASU</b></th>
+                <th><b>SELVARAGHAVAN</b></th>
+                <th><b>SHANKAR</b></th>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br><fieldset>
+        <p>actor</p>
+        <table class="persons">
+            <tr>
+                <th ><a href="./rajini movie.html"><img src="../Movie/Tamil/Actors/rajini/ranji.jpg.png" class="person"></a></th>
+                <th style="padding-left: 130px;"><a href="./ajithmovies.html"><img src="../Musician/musician images/ajith.jpg" class="person"></a></th>
+                <th style="padding-left: 133px;"><a href="./vijaymovies.html"><img src="../Musician/musician images/vijay.jpg" class="person"></a></th>
+                <th style="padding-left: 130px;"><a href="./dhanushmovies.html"><img src="../Musician/musician images/dhanush.jpg" class="person"></a></th>
+                <th style="padding-left: 100px;"><a href="./sivakarthikeyanmovies.html"><img src="../Movie/Tamil/Actors/sivakarthikeyan/sivakarthikeyan.png" class="person"></a></th>
+            </tr>
+            <tr>
+                <th style="padding-left: 120px;"><b>RAJINI KANTH</b></th>
+                <th><b>AJITH KUMAR</b></th>
+                <th><b>VIJAY</b></th>
+                <th><b>DHANUSH</b></th>
+                <th><b>SIVAKARTHIKAYAN</b></th>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br>
+    <a href="./movie catelog.html"><input type="button" value="back"  style="color: rgb(186, 130, 238); border-radius: 20px; border-color: rgb(186, 130, 238);background-color:black;"></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction : false,
+            },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable : true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+    </script>
+    <script>
+        function la() {
+    let lan_choice=document.getElementById("choice").value
+    if (lan_choice=="tamil"){
+        window.location.href="./tamil movie.html"
+    }
+    else if (lan_choice=="for you"){
+        window.location.href="./movie catelog.html"
+    }
+    else if (lan_choice=="malayalam"){
+        window.location.href="./malayalammovies.html"
+    }
+    else if (lan_choice=="telugu"){
+        window.location.href="./telugumovies.html"
+    }
+    else{
+        window.location.href="./kannadamovies.html"
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malayalam movie</title>
+    <link rel="stylesheet" href="../CSS/moviepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../JS/language choice.js"></script>
+    <style>
+        .swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left:150px;
+}
+</style>
+</head>
+<body>
+    <div>
+        <img src="../Images/sidewaylogo.png" id="logo">
+    <a href="./home.html"><input type="button" value="Home"  class="menu"></a>
+    <a href="./about.html"><input type="button" value="About"  class="menu"></a>
+    <a href="./contact.html"><input type="button" value="Contact"  class="menu"></a>
+    <a href="./musician.html"><input type="button" value="Musics"  class="menu"></a>
+    </div>
+    <div class="line"></div>
+    <br>
+    <select id="choice" onchange="la()">
+        <option value="for you">for you</option>
+        <option value="tamil">Tamil</option>
+        <option value="telugu">Telugu</option>
+        <option value="malayalam" selected>Malayalam</option>
+        <option value="kannada">Kannada</option>
+    </select>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="./aavasham.html"><img src="../Movie/imageslider/malayalam/AAVESHAM.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Abraham Ozler.html"><img src="../Movie/imageslider/malayalam/ABRAHAM OZLER.jpg"></a></div>
+                <div class="swiper-slide"><a href="./bazooka.html"><img src="../Movie/imageslider/malayalam/BAZOOKA"></a></div>
+                <div class="swiper-slide"><a href="./jai ganesh.html"><img src="../Movie/imageslider/malayalam/JAI GANESH"></a></div>
+                <div class="swiper-slide"><a href="./nadikar.html"><img src="../Movie/imageslider/malayalam/NADIKAR"></a></div>
+                <div class="swiper-slide"><a href="./premalumalayalam.html"><img src="../Movie/imageslider/malayalam/PREMALU.jpg"></a></div>
+                <div class="swiper-slide"><a href="./Varshangalkku Shesham.html"><img src="../Movie/imageslider/malayalam/VARSHANGALKKU SHESHAM.jpg"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
+
+    <fieldset>
+        <p>NEW Release</p>
+        <table>
+            <td><a href="./Aadujeevitham.html"><img src="../Movie/malayalam/new release/Aadujeevitham.jpg" class="poster"></a><b>Aadujeevitham</b></td>
+            <td><a href="./aavasham.html"><img src="../Movie/malayalam/new release/aavasham.jpg" class="poster"></a><b>Aavesham</b></td>
+            <td><a href="./jai ganesh.html"><img src="../Movie/malayalam/new release/jai ganesh.jpg" class="poster"></a><b>Jai Ganesh</b></td>
+            <td><a href="./nadikar.html"><img src="../Movie/malayalam/new release/nadikar.jpg" class="poster"></a><b>Nadikar</b></td>
+            <td><a href="./Varshangalkku Shesham.html"><img src="../Movie/malayalam/new release/varshangalkku shesham.jpg" class="poster"></a><b>Varshangalkku Shesham</b></td>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>action release</p>
+        <table>
+            <tr>
+                <td><a href="./Abraham Ozler.html"><img src="../Movie/malayalam/action/Abraham Ozler.jpg" class="poster"></a><b>Abraham Ozler</b></td>
+                <td><a href="./bazooka.html"><img src="../Movie/malayalam/action/bazooka.jpg" class="poster"></a><b>Bazooka</b></td>
+                <td><a href="./bramayugam.html"><img src="../Movie/malayalam/action/bramayugam.jpg" class="poster"></a><b>Bramayugam</b></td>
+                <td><a href="./sabari.html"><img src="../Movie/malayalam/action/sabari.jpg" class="poster"></a><b>Sabari</b></td>
+                <td><a href="./turbo.html"><img src="../Movie/malayalam/action/turbo.jpg" class="poster"></a><b>Turbo</b></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <p>romantic release</p>
+        <table>
+            <tr>
+                <td><a href="./little hearts.html"><img src="../Movie/malayalam/romance/little hearts.jpg" class="poster"></a><b>Little hearts</b></td>
+                <td><a href="./once upon a time.html"><img src="../Movie/malayalam/romance/Once Upon a Time in Kochi.jpg" class="poster"></a><b>Once Upon A Time In Kochi</b></td>
+                <td><a href="./pavi caretaker.html"><img src="../Movie/malayalam/romance/pavi caretaker.jpg" class="poster"></a><b>Pavi Caretaker</b></td>
+                <td><a href="./premalumalayalam.html"><img src="../Movie/malayalam/romance/premalu.jpg" class="poster"></a><b>Premalu</b></td>
+                <td><a href="./qalb.html"><img src="../Movie/malayalam/romance/qalb.jpg" class="poster"></a><b>QALB</b></td>
+                
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <a href="./movie catelog.html"><input type="button" value="back"  style="color: rgb(186, 130, 238); border-radius: 20px; border-color: rgb(186, 130, 238);background-color:black;"></a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction : false,
+            },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable : true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+    </script>
+    <script>
+        function la() {
+    let lan_choice=document.getElementById("choice").value
+    if (lan_choice=="tamil"){
+        window.location.href="./tamil movie.html"
+    }
+    else if (lan_choice=="for you"){
+        window.location.href="./movie catelog.html"
+    }
+    else if (lan_choice=="malayalam"){
+        window.location.href="./malayalammovies.html"
+    }
+    else if (lan_choice=="telugu"){
+        window.location.href="./telugumovies.html"
+    }
+    else{
+        window.location.href="./kannadamovies.html"
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+a .poster{
+    width :190px;
+    height:264px;
+    transition: 0.5s;
+}
+td{
+padding-left: 85px;
+text-align: center;
+}
+b{
+text-transform: uppercase;
+font-size: 20px;
+}
+p{
+text-transform: uppercase;
+font-size: 25px;
+font-weight:bolder;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color:rgb(0, 0, 0);
+}
+body{
+background-color: black;
+}
+fieldset{
+background-color: rgb(186, 130, 238);
+border-radius: 20px;
+box-shadow: 0 0 10px rgb(186, 130, 238);
+}
+.poster:hover{
+transform: scale(1.2);
+box-shadow: 0 0 10px 2px black;
+}
+.persons{
+    img{
+        height:150px;
+        width: 150px;
+        border-radius: 200px;
+        border: 2px solid black;
+        transition: 0.5s;
+    }
+    th{
+        text-align: center;
+        padding-left: 120px;
+        margin-left: 100px;
+    }
+}
+.persons img:hover{
+    box-shadow: 0 0 15px 4px rgb(0, 0, 0);
+    transform:scale(1.2);
+    border:3px solid rgb(186, 130, 238)
+}
+.menu{
+    color: rgb(186, 130, 238); 
+    border-radius: 20px; 
+    float: right;
+    border: none;
+    border-color: rgb(186, 130, 238);background-color:black;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+.menu:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+#logo{
+    width: 250px;
+    height: 70px;
+    border: none;
+}
+.line{
+    border-bottom: 2px rgb(186, 130, 238) solid;
+}
+#choice{
+    color: rgb(186, 130, 238);
+    background-color: black;
+    height: 40px;
+    width: 260px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 20px;
+    border: 1px rgb(186, 130, 238) solid;
+}
+.container{
+    background-color: black;
+}
+.swiper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left:150px;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: rgb(186, 130, 238);
+}
+.swiper .swiper-pagination-bullet-active{
+    background-color: rgb(186, 130, 238);
+}
+.swiper-wrapper img{
+    width: 100%;
+
+}
+.swiper-slide img{
+    width: 1230px;
+    height: 600px;
+}
